@@ -1,0 +1,40 @@
+
+~
+java:S3008s"RRename this field "COURIER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ¦™Hâ<RMINORZ
+CODE_SMELL
+^
+java:S2093G"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿHß<RCRITICALZ
+CODE_SMELL
+Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ğàÖÎúÿÿÿÿHç<RMINORZ
+CODE_SMELL
+»
+java:S11301"‰Remove the declaration of thrown exception 'javax.mail.internet.AddressException' which is a subclass of 'javax.mail.MessagingException'.(ÔÇşüÿÿÿÿHã<RMINORZ
+CODE_SMELL
+f
+java:S1118-":Add a private constructor to hide the implicit public one.(ÛØHë<RMAJORZ
+CODE_SMELL
+‹
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(âõ’ÊøÿÿÿÿHå<RMINORZ
+CODE_SMELL
+i
+java:S1068u"8Remove this unused "COURIER_SMALL_FOOTER" private field.(”Ğ¥ÇşÿÿÿÿHí<RMAJORZ
+CODE_SMELL
+w	java:S112}"FDefine and throw a dedicated exception instead of using a generic one.(ôÖì8¹Š½¸á0Hì<RMAJORZ
+CODE_SMELL
+f
+java:S1161@":Add the "@Override" annotation above this method signature(‡èú×Hİ<RMAJORZ
+CODE_SMELL
+
+java:S3008u"_Rename this field "COURIER_SMALL_FOOTER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”Ğ¥ÇşÿÿÿÿHé<RMINORZ
+CODE_SMELL
+Y	java:S108l")Either remove or fill this block of code.(±Ÿ—±ÿÿÿÿÿHè<RMAJORZ
+CODE_SMELL
+„
+java:S3008t"XRename this field "COURIER_SMALL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ŠòáHê<RMINORZ
+CODE_SMELL
+o
+java:S2479ƒ":Remove the non-escaped \u00A0 character from this literal.(üµ×–şÿÿÿÿHá<RCRITICALZ
+CODE_SMELL
+†
+java:S2293µ"YReplace the type specification in this constructor call with the diamond operator ("<>").(¦€®óHÛ<RMINORZ
+CODE_SMELL

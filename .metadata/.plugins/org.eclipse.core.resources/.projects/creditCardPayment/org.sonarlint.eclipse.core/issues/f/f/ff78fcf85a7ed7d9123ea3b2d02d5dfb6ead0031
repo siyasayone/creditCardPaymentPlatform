@@ -1,0 +1,10 @@
+
+®
+java:S1130"vRemove the declaration of thrown exception 'javax.mail.MessagingException', as it cannot be thrown from method's body.(‘½ä¼ùÿÿÿÿ8þ´²¸á0Hö9RMINORZ
+CODE_SMELL
+g	java:S125"<This block of commented-out lines of code should be removed.(Ùõœ¼Hø9RMAJORZ
+CODE_SMELL
+h	java:S107"=Method has 11 parameters, which is greater than 7 authorized.(©â‘ÚHù9RMAJORZ
+CODE_SMELL
+…	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÿúÃHú9RMINORZ
+CODE_SMELL

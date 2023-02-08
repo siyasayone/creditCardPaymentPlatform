@@ -1,0 +1,31 @@
+package com.example.creditCardPayment.repository.customerCreditCard;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+
+@Repository
+public interface CustomerCreditCardRepository extends JpaRepository<CustomerCreditCard, Long> {
+
+	@Query("select h from CustomerCreditCard h where h.isDeleted='N' and h.cardNumber=:cardNumber")
+	CustomerCreditCard findByCardNumber(Long cardNumber);
+	
+	@Query("select h from CustomerCreditCard h where h.isDeleted='N' and h.customerId=:customerId")
+	List<CustomerCreditCard> findByCustomerId(Long customerId);
+	
+	@Transactional
+	@Modifying
+	@Query(value = "Update CustomerCreditCard a SET a.availableCredit=:availableCredit,a.totalDue=:totalDue WHERE a.customerId=:customerId AND a.isDeleted = 'N'")
+	void updateCreditLimit(Long availableCredit,Long totalDue, Long customerId);
+	
+	@Transactional
+	@Query(value = "select h from CustomerCreditCard h where h.isDeleted='N' and h.statementDay=:statementDay")
+	List<CustomerCreditCard> findByStatementDay(Long statementDay);
+
+}

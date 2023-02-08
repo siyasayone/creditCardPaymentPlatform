@@ -1,0 +1,32 @@
+package com.creditCardPayment.spring.security.postgresql.repository.statement;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import com.creditCardPayment.spring.security.postgresql.entity.statement.CustomerStatement;
+
+
+/**
+ * 
+ * @author Siya
+ *
+ */
+@Repository
+public interface CustomerStatementRepository extends JpaRepository<CustomerStatement, Long> {
+
+	CustomerStatement findByStatementId(Long customerStatement);
+	
+	@Query(value = "SELECT a FROM CustomerStatement a WHERE a.isPaid='N' and a.customerId=:customerId")
+	List<CustomerStatement> findLastStatementByCustomerId(Long customerId);
+	
+	@Query(value = "SELECT a FROM CustomerStatement a WHERE a.isPaid='N'")
+	List<CustomerStatement> listAllStatements();
+
+	@Query(value = "SELECT a FROM CustomerStatement a WHERE customerId=:customerId")
+	List<CustomerStatement> listPayments(Long customerId);
+
+
+}

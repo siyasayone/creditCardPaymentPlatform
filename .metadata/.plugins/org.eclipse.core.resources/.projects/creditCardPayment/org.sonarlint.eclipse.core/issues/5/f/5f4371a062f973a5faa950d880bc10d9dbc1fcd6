@@ -1,0 +1,13 @@
+
+t
+java:S2259Ï"BA "NullPointerException" could be thrown; "user" is nullable here.(¼À´Êÿÿÿÿÿ8Åù«â0HÒhRMAJORZBUG
+†
+java:S1128"SRemove this unused import 'com.example.creditCardPayment.response.MessageResponse'.(·²†8¢ºÄ²â0HÕhRMINORZ
+CODE_SMELL
+F
+java:S21196"Save and re-use this "Random".(¡Å”¦H×hRCRITICALZBUG
+y
+java:S1128"ARemove this unused import 'javax.validation.constraints.NotNull'.(áç¥ãüÿÿÿÿ8¢ºÄ²â0HØhRMINORZ
+CODE_SMELL
+Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ŞÏíÂıÿÿÿÿHÚhRMINORZ
+CODE_SMELL

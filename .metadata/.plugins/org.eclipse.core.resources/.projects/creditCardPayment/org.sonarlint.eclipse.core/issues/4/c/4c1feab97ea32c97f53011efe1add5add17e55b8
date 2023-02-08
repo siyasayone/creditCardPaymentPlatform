@@ -1,0 +1,12 @@
+
+V
+java:S1452Ñ"&Remove usage of generic wildcard type.(›ﬁº¨H”}RCRITICALZ
+CODE_SMELL
+f
+java:S1854R":Remove this useless assignment to local variable "entity".(¨ÃÅ‡H‘}RMAJORZ
+CODE_SMELL
+Ö	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±”Å≠H’}RMINORZ
+CODE_SMELL
+Z
+java:S1452<"&Remove usage of generic wildcard type.(∏Ùê≠¯ˇˇˇˇH÷}RCRITICALZ
+CODE_SMELL

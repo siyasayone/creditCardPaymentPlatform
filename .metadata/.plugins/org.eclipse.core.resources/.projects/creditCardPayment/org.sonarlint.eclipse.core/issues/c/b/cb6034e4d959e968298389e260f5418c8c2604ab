@@ -1,0 +1,66 @@
+
+Š
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(èì½ØÿÿÿÿÿH¡<RMINORZ
+CODE_SMELL
+o
+java:S2479ª":Remove the non-escaped \u0009 character from this literal.(ºõëœúÿÿÿÿH—<RCRITICALZ
+CODE_SMELL
+¦
+java:S1192)"rDefine a constant instead of duplicating this literal "      ------------------------------------- */\r
+" 8 times.(ùÁøÿÿÿÿÿH¤<RCRITICALZ
+CODE_SMELL
+Š
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(™¶Ú¸ûÿÿÿÿHÚ;RMINORZ
+CODE_SMELL
+^
+java:S1481!"-Remove this unused "currDate" local variable.(ò±Ã°øÿÿÿÿHè;RMINORZ
+CODE_SMELL
+“
+java:S1192-"dDefine a constant instead of duplicating this literal "        font-family: sans-serif;\r
+" 3 times.(Ğ’ÕH<RCRITICALZ
+CODE_SMELL
+‚
+java:S1192"NDefine a constant instead of duplicating this literal "        }\r
+" 14 times.(»ç„õùÿÿÿÿH­<RCRITICALZ
+CODE_SMELL
+…
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(îÅ£ÃH‘<RMINORZ
+CODE_SMELL
+Š
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(õŞÎÕüÿÿÿÿHá;RMINORZ
+CODE_SMELL
+Š
+java:S1192/"VDefine a constant instead of duplicating this literal "        margin: 0;\r
+" 3 times.(šÄç–øÿÿÿÿHä;RCRITICALZ
+CODE_SMELL
+Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ğàÖÎúÿÿÿÿHÜ;RMINORZ
+CODE_SMELL
+m
+java:S1854!"<Remove this useless assignment to local variable "currDate".(ò±Ã°øÿÿÿÿHã;RMAJORZ
+CODE_SMELL
+{
+java:S1192,"LDefine a constant instead of duplicating this literal "      }\r
+" 34 times.(ı˜”„Hê;RCRITICALZ
+CODE_SMELL
+¡
+java:S1192("rDefine a constant instead of duplicating this literal "      /* -------------------------------------\r
+" 8 times.(¬×ÃH˜<RCRITICALZ
+CODE_SMELL
+o
+java:S2479©":Remove the non-escaped \u0009 character from this literal.(²ÙÇÏúÿÿÿÿH£<RCRITICALZ
+CODE_SMELL
+›
+java:S1192…"fDefine a constant instead of duplicating this literal "          width: 100% !important; \r
+" 3 times.(¡Í‚üÿÿÿÿH“<RCRITICALZ
+CODE_SMELL
+ˆ
+java:S11927"YDefine a constant instead of duplicating this literal "        width: 100%; \r
+" 3 times.(½ÿ‡šHÖ;RCRITICALZ
+CODE_SMELL
+f
+java:S1118":Add a private constructor to hide the implicit public one.(Ä—ñ‡H¼<RMAJORZ
+CODE_SMELL
+—
+java:S1192="cDefine a constant instead of duplicating this literal "        box-sizing: border-box;\r
+" 3 times.(ãÏ»‘ùÿÿÿÿHİ;RCRITICALZ
+CODE_SMELL

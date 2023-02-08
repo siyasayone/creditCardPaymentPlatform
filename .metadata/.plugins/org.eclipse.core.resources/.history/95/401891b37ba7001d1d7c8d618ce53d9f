@@ -1,0 +1,28 @@
+package com.example.creditCardPayment.dto.errorDetails;
+
+import java.util.Date;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+/**
+ * 
+ * @author Siya
+ *
+ */
+
+public class ErrorDetailsDTO {
+
+	 private Date timestamp;
+	  private String message;
+	  private String details;
+
+	  public ErrorDetailsDTO(Date timestamp, String message, String details) {
+	    super();
+	    this.timestamp = timestamp;
+	    this.message = message;
+	    this.details = details;
+
+}
+}

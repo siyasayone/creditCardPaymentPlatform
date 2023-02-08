@@ -1,0 +1,45 @@
+package com.example.creditCardPayment.controllers.statement;
+
+import java.util.List;
+
+import javax.mail.MessagingException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.creditCardPayment.entity.statement.CustomerStatement;
+import com.example.creditCardPayment.security.UserDetailsImpl;
+import com.example.creditCardPayment.services.statement.CustomerStatementService;
+
+
+@RestController
+@RequestMapping("/creditcardPayment/statement")
+public class CustomerStatementsController {
+	
+	@Autowired
+	CustomerStatementService customerStatementService;
+
+
+	@PostMapping("/generateStatement")
+	//@Scheduled(cron = "0 0 0 * * *")
+	public ResponseEntity<?> generateStatements() throws MessagingException  {
+		return customerStatementService.generateStatements();
+	}
+
+	@GetMapping("getStatementPaymentHistory")
+	public List<CustomerStatement> getPaymentHistory(@AuthenticationPrincipal UserDetailsImpl loggeduser) {
+		return customerStatementService.getPaymentHistory(loggeduser);
+	}
+	
+	@PostMapping("sendPaymentDueRemainders")
+	//@Scheduled(cron = "0 0 0 * * *")
+	public ResponseEntity<?> sendPaymentDueRemainders() {
+		return customerStatementService.sendPaymentDueRemainders();
+	}
+
+}

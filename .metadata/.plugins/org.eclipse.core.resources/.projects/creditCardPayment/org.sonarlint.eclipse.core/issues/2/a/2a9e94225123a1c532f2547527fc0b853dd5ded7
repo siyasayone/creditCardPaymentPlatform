@@ -1,0 +1,21 @@
+
+`
+java:S1128"(Remove this unused import 'lombok.Data'.(÷í«ÿÿÿÿÿ8Úÿëºá0Hè|RMINORZ
+CODE_SMELL
+h
+java:S1128"5Remove this unused import 'lombok.NoArgsConstructor'.(¸¨›8Úÿëºá0Hê|RMINORZ
+CODE_SMELL
+…	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÂÔëHì|RMINORZ
+CODE_SMELL
+n
+java:S1128"6Remove this unused import 'lombok.AllArgsConstructor'.(´œ¾öùÿÿÿÿ8Úÿëºá0Hí|RMINORZ
+CODE_SMELL
+^
+java:S1068"+Remove this unused "details" private field.(…ç¢«8Úÿëºá0Hï|RMAJORZ
+CODE_SMELL
+c
+java:S1068"+Remove this unused "message" private field.(ù„è¿ûÿÿÿÿ8Úÿëºá0Hñ|RMAJORZ
+CODE_SMELL
+e
+java:S1068"-Remove this unused "timestamp" private field.(œ¥½¾üÿÿÿÿ8Úÿëºá0Hó|RMAJORZ
+CODE_SMELL

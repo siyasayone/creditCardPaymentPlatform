@@ -1,0 +1,66 @@
+
+¡
+java:S1192#"rDefine a constant instead of duplicating this literal "      /* -------------------------------------\r
+" 8 times.(¬×ÃHºKRCRITICALZ
+CODE_SMELL
+Š
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(èì½ØÿÿÿÿÿHØ=RMINORZ
+CODE_SMELL
+o
+java:S2479¥":Remove the non-escaped \u0009 character from this literal.(ºõëœúÿÿÿÿH«>RCRITICALZ
+CODE_SMELL
+^
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8şöÊ«â0H»BRMINORZ
+CODE_SMELL
+Š
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(õŞÎÕüÿÿÿÿHÚ=RMINORZ
+CODE_SMELL
+…
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(îÅ£ÃHë=RMINORZ
+CODE_SMELL
+‚
+java:S1192'"LDefine a constant instead of duplicating this literal "      }\r
+" 34 times.(ı˜”„8ÎÀß«â0HùRRCRITICALZ
+CODE_SMELL
+o
+java:S2479¤":Remove the non-escaped \u0009 character from this literal.(²ÙÇÏúÿÿÿÿH»>RCRITICALZ
+CODE_SMELL
+›
+java:S1192€"fDefine a constant instead of duplicating this literal "          width: 100% !important; \r
+" 3 times.(¡Í‚üÿÿÿÿHŞ=RCRITICALZ
+CODE_SMELL
+‘
+java:S1192*"VDefine a constant instead of duplicating this literal "        margin: 0;\r
+" 3 times.(šÄç–øÿÿÿÿ8íˆã«â0H­VRCRITICALZ
+CODE_SMELL
+Š
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(™¶Ú¸ûÿÿÿÿHÜ=RMINORZ
+CODE_SMELL
+Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ğàÖÎúÿÿÿÿH™>RMINORZ
+CODE_SMELL
+‚
+java:S1192z"NDefine a constant instead of duplicating this literal "        }\r
+" 14 times.(»ç„õùÿÿÿÿH¬>RCRITICALZ
+CODE_SMELL
+š
+java:S1192("dDefine a constant instead of duplicating this literal "        font-family: sans-serif;\r
+" 3 times.(Ğ’Õ8íˆã«â0HµVRCRITICALZ
+CODE_SMELL
+f
+java:S1118":Add a private constructor to hide the implicit public one.(÷‘·H>RMAJORZ
+CODE_SMELL
+
+java:S11922"YDefine a constant instead of duplicating this literal "        width: 100%; \r
+" 3 times.(½ÿ‡š8íˆã«â0H±VRCRITICALZ
+CODE_SMELL
+
+java:S11928"cDefine a constant instead of duplicating this literal "        box-sizing: border-box;\r
+" 3 times.(ãÏ»‘ùÿÿÿÿ8íˆã«â0H©VRCRITICALZ
+CODE_SMELL
+¦
+java:S1192$"rDefine a constant instead of duplicating this literal "      ------------------------------------- */\r
+" 8 times.(ùÁøÿÿÿÿÿH¿>RCRITICALZ
+CODE_SMELL
+b
+java:S1128"/Remove this unused import 'java.util.Calendar'.(ÿÛö´8ÙÁã«â0HWRMINORZ
+CODE_SMELL

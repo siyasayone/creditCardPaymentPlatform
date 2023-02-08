@@ -1,0 +1,10 @@
+
+v	java:S112("FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒéüÿÿÿÿH”9RMAJORZ
+CODE_SMELL
+g	java:S125"<This block of commented-out lines of code should be removed.(­ÃÛùH•9RMAJORZ
+CODE_SMELL
+¿
+java:S1130!"Remove the declaration of thrown exception 'com.fasterxml.jackson.core.JsonProcessingException' which is a subclass of 'java.io.IOException'.(ä•·ÌúÿÿÿÿH–9RMINORZ
+CODE_SMELL
+Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³Î¦åÿÿÿÿÿH˜9RMINORZ
+CODE_SMELL

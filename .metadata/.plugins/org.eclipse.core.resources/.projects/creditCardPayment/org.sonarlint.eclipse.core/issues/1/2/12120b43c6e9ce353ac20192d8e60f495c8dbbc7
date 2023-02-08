@@ -1,0 +1,18 @@
+
+ƒ
+java:S1128	"PRemove this unused import 'org.springframework.validation.annotation.Validated'.(¸ÒÖƒ8×îşºá0Hğ6RMINORZ
+CODE_SMELL
+–
+java:S1128"^Remove this unused import 'org.springframework.security.authentication.AuthenticationManager'.(ğş–şÿÿÿÿ8öÚ«§â0Hó7RMINORZ
+CODE_SMELL
+Z
+java:S1452"&Remove usage of generic wildcard type.(ÃŒãüÿÿÿÿHô6RCRITICALZ
+CODE_SMELL
+Z
+java:S1452#"&Remove usage of generic wildcard type.(âÈóúÿÿÿÿHò6RCRITICALZ
+CODE_SMELL
+Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(… µĞüÿÿÿÿHó6RMINORZ
+CODE_SMELL
+‘
+java:S1128"YRemove this unused import 'org.springframework.security.crypto.password.PasswordEncoder'.(‰¡ßáÿÿÿÿÿ8 ©¨§â0Hù6RMINORZ
+CODE_SMELL

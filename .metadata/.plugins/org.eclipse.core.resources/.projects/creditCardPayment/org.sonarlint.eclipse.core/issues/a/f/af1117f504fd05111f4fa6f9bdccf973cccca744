@@ -1,0 +1,56 @@
+
+Œ
+java:S1104"TMake smtpPort a static final constant or non-public and provide accessors if needed.(é€ÒËüÿÿÿÿ8Ã©Áªâ0HÃ<RMINORZ
+CODE_SMELL
+h
+java:S1444"5Make this "public static smtpFromAddress" field final(À›µ–8Ã©Áªâ0HÌ<RMINORZ
+CODE_SMELL
+
+java:S1104"XMake smtpHostname a static final constant or non-public and provide accessors if needed.(äØÔ‹ÿÿÿÿÿ8Ã©Áªâ0HÂ<RMINORZ
+CODE_SMELL
+
+java:S1104"WMake contextRoot a static final constant or non-public and provide accessors if needed.(„ù²µûÿÿÿÿ8Ã©Áªâ0HÁ<RMINORZ
+CODE_SMELL
+e
+java:S1444	"2Make this "public static smtpPassword" field final(¥¡ 8Ã©Áªâ0HÍ<RMINORZ
+CODE_SMELL
+‹
+java:S1104	"XMake smtpPassword a static final constant or non-public and provide accessors if needed.(¥¡ 8Ã©Áªâ0HÅ<RMINORZ
+CODE_SMELL
+f
+java:S1444".Make this "public static smtpPort" field final(é€ÒËüÿÿÿÿ8Ã©Áªâ0HË<RMINORZ
+CODE_SMELL
+
+java:S1104"[Make smtpFromAddress a static final constant or non-public and provide accessors if needed.(À›µ–8Ã©Áªâ0HÄ<RMINORZ
+CODE_SMELL
+
+java:S1104"VMake appBaseUrl a static final constant or non-public and provide accessors if needed.(ĞÓò©ûÿÿÿÿ8Ã©Áªâ0HÇ<RMINORZ
+CODE_SMELL
+m
+java:S1118":Add a private constructor to hide the implicit public one.(¼ûè‘8Ã©Áªâ0HÑ<RMAJORZ
+CODE_SMELL
+
+java:S1104
+"[Make smtpContentType a static final constant or non-public and provide accessors if needed.(Š­èî8Ã©Áªâ0HÆ<RMINORZ
+CODE_SMELL
+i
+java:S1444"1Make this "public static contextRoot" field final(„ù²µûÿÿÿÿ8Ã©Áªâ0HÉ<RMINORZ
+CODE_SMELL
+j
+java:S1444"2Make this "public static smtpHostname" field final(äØÔ‹ÿÿÿÿÿ8Ã©Áªâ0HÊ<RMINORZ
+CODE_SMELL
+h
+java:S1444"0Make this "public static appBaseUrl" field final(ĞÓò©ûÿÿÿÿ8Ã©Áªâ0HÏ<RMINORZ
+CODE_SMELL
+
+java:S1104"\Make fileSaveLocation a static final constant or non-public and provide accessors if needed.(‰¶äÆ8Ã©Áªâ0HÀ<RMINORZ
+CODE_SMELL
+i
+java:S1444"6Make this "public static fileSaveLocation" field final(‰¶äÆ8Ã©Áªâ0HÈ<RMINORZ
+CODE_SMELL
+‘	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´†€úÿÿÿÿ8Ã©Áªâ0HĞ<RMINORZ
+CODE_SMELL
+h
+java:S1444
+"5Make this "public static smtpContentType" field final(Š­èî8Ã©Áªâ0HÎ<RMINORZ
+CODE_SMELL

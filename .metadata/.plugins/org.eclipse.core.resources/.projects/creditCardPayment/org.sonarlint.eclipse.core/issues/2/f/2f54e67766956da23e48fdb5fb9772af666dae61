@@ -1,0 +1,9 @@
+
+q
+java:S1128">Remove this unused import 'javax.validation.constraints.Size'.(›«´Ý8Êéƒ®â0H²[RMINORZ
+CODE_SMELL
+w
+java:S1128"?Remove this unused import 'javax.validation.constraints.Email'.(¸àô¹üÿÿÿÿ8Êéƒ®â0H°[RMINORZ
+CODE_SMELL
+Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(üç´‹øÿÿÿÿH©XRMINORZ
+CODE_SMELL

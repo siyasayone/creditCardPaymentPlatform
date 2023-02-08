@@ -1,0 +1,8 @@
+
+k
+java:S1118":Add a private constructor to hide the implicit public one.(«•¯ÚúÿÿÿÿHğ9RMAJORZ
+CODE_SMELL
+…	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÿúÃHñ9RMINORZ
+CODE_SMELL
+h	java:S107	"=Method has 11 parameters, which is greater than 7 authorized.(ÌÂÔHò9RMAJORZ
+CODE_SMELL

@@ -1,0 +1,25 @@
+
+…	java:S100\"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ÿ¤éıÿÿÿÿ8ïş°­â0H¿XRMINORZ
+CODE_SMELL
+€	java:S100H"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨–œÁ8¸ğ÷ºá0HÉ8RMINORZ
+CODE_SMELL
+k
+java:S1611("3Remove the parentheses around the "error" parameter(ı£—Ôúÿÿÿÿ8ûˆğºá0HĞ8RMINORZ
+CODE_SMELL
+…	java:S100W"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì”‰¼üÿÿÿÿ8¸ğ÷ºá0HÌ8RMINORZ
+CODE_SMELL
+…	java:S100>"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç½÷‰üÿÿÿÿ8¸ğ÷ºá0HÑ8RMINORZ
+CODE_SMELL
+…	java:S100R"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áÜ‡ıÿÿÿÿ8¸ğ÷ºá0HÒ8RMINORZ
+CODE_SMELL
+€	java:S100C"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îŠöá8¸ğ÷ºá0HÏ8RMINORZ
+CODE_SMELL
+…	java:S100M"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùãùáÿÿÿÿÿ8¸ğ÷ºá0HË8RMINORZ
+CODE_SMELL
+‘
+java:S2293?"YReplace the type specification in this constructor call with the diamond operator ("<>").(ËÑîËûÿÿÿÿ8¸ğ÷ºá0HÍ8RMINORZ
+CODE_SMELL
+Œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(éÙÇì8Àúöºá0HÊ8RMINORZ
+CODE_SMELL
+€	java:S1008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦ÑËñ8Ó®´§â0H×8RMINORZ
+CODE_SMELL

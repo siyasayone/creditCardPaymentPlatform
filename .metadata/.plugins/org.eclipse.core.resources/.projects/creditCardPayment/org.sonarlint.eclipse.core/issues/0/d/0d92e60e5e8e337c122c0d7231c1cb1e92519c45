@@ -1,0 +1,12 @@
+
+a
+java:S1452%"&Remove usage of generic wildcard type.(©Ã™¹ùÿÿÿÿ8éû¬â0HŸXRCRITICALZ
+CODE_SMELL
+x
+java:S1128	"@Remove this unused import 'org.springframework.http.HttpStatus'.(íŸ¤Šúÿÿÿÿ8¡È±â0H\RMINORZ
+CODE_SMELL
+y
+java:S1128"ARemove this unused import 'javax.validation.constraints.NotNull'.(áç¥ãüÿÿÿÿ8ú¨×±â0H˜\RMINORZ
+CODE_SMELL
+…	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(“¬Ú‡Hò8RMINORZ
+CODE_SMELL

@@ -1,0 +1,26 @@
+
+‘	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ş¡¡·ÿÿÿÿÿ8¯áËªâ0HŸ=RMINORZ
+CODE_SMELL
+q
+java:S2696"6Make the enclosing method "static" or remove this set.(ñ©Š¥ùÿÿÿÿ8¯áËªâ0H =RCRITICALZ
+CODE_SMELL
+q
+java:S2696"6Make the enclosing method "static" or remove this set.(°‚Íùÿÿÿÿ8¯áËªâ0H¡=RCRITICALZ
+CODE_SMELL
+l
+java:S2696"6Make the enclosing method "static" or remove this set.(ÍÕ²•8¯áËªâ0H¢=RCRITICALZ
+CODE_SMELL
+l
+java:S2696"6Make the enclosing method "static" or remove this set.(åã8¯áËªâ0H£=RCRITICALZ
+CODE_SMELL
+l
+java:S2696"6Make the enclosing method "static" or remove this set.(¯ôÆî8¯áËªâ0H¤=RCRITICALZ
+CODE_SMELL
+q
+java:S2696"6Make the enclosing method "static" or remove this set.(Ü¬±ûøÿÿÿÿ8¯áËªâ0H¥=RCRITICALZ
+CODE_SMELL
+l
+java:S2696"6Make the enclosing method "static" or remove this set.(‘‹Ñ§8¯áËªâ0H¦=RCRITICALZ
+CODE_SMELL
+s	java:S125"<This block of commented-out lines of code should be removed.(üæ¾ğıÿÿÿÿ8¯áËªâ0H§=RMAJORZ
+CODE_SMELL

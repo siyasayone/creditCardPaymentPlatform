@@ -1,0 +1,15 @@
+
+u
+java:S1874+"DRemove this use of "WebSecurityConfigurerAdapter"; it is deprecated.(Ã÷ ´ıÿÿÿÿHü~RMINORZ
+CODE_SMELL
+w
+java:S1128"DRemove this unused import 'springfox.documentation.service.Contact'.(×÷’Ã8©²•àâ0Hı~RMINORZ
+CODE_SMELL
+j
+java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8©²•àâ0Hÿ~RMINORZ
+CODE_SMELL
+…	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ßº°¦HRMINORZ
+CODE_SMELL
+|
+java:S1128"DRemove this unused import 'springfox.documentation.service.ApiInfo'.(ŸÈ÷àûÿÿÿÿ8©²•àâ0H‚RMINORZ
+CODE_SMELL

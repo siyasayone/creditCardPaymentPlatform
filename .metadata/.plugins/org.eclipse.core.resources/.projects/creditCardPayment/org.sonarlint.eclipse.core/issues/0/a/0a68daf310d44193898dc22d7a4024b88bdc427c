@@ -1,0 +1,12 @@
+
+_
+java:S1481H"'Remove this unused "d1" local variable.(à¢§Æûÿÿÿÿ8ó»’×â0H¡{RMINORZ
+CODE_SMELL
+n
+java:S1854H"6Remove this useless assignment to local variable "d1".(à¢§Æûÿÿÿÿ8ó»’×â0H {RMAJORZ
+CODE_SMELL
+d
+java:S1128"1Remove this unused import 'java.text.DateFormat'.(÷Œá¼8úÒòÖâ0HåzRMINORZ
+CODE_SMELL
+„	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(€áÃXH¨gRMINORZ
+CODE_SMELL

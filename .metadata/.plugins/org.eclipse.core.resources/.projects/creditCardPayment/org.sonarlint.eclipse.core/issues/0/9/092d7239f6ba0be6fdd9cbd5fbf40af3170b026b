@@ -1,0 +1,35 @@
+
+Š
+java:S2293#"YReplace the type specification in this constructor call with the diamond operator ("<>").(ôÙ¯ªøÿÿÿÿHÔ9RMINORZ
+CODE_SMELL
+s	java:S125"<This block of commented-out lines of code should be removed.(Æ«È¼üÿÿÿÿ8”›À©â0Hà9RMAJORZ
+CODE_SMELL
+g	java:S1257"<This block of commented-out lines of code should be removed.(ÕáÄõHÇ9RMAJORZ
+CODE_SMELL
+Š
+java:S2293$"YReplace the type specification in this constructor call with the diamond operator ("<>").(¿¡¸°ùÿÿÿÿHĞ9RMINORZ
+CODE_SMELL
+…	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÿúÃHÆ9RMINORZ
+CODE_SMELL
+©
+java:S5527?"wEnable server hostname verification on this SSL/TLS connection, by setting "mail.smtp.ssl.checkserveridentity" to true.(’ß‡ƒHÃ9RCRITICALZVULNERABILITY
+M
+java:S1116""Remove this empty statement.(²©ŸÇüÿÿÿÿHÁ9RMINORZ
+CODE_SMELL
+n	java:S1250"<This block of commented-out lines of code should be removed.(æï¯8—àÀ©â0Hé9RMAJORZ
+CODE_SMELL
+f
+java:S11616":Add the "@Override" annotation above this method signature(“–ışHÒ9RMAJORZ
+CODE_SMELL
+M
+java:S1116#"Remove this empty statement.(ôÙ¯ªøÿÿÿÿHÊ9RMINORZ
+CODE_SMELL
+f
+java:S1161C":Add the "@Override" annotation above this method signature(‡èú×HÎ9RMAJORZ
+CODE_SMELL
+Š
+java:S2293%"YReplace the type specification in this constructor call with the diamond operator ("<>").(¢±¥şÿÿÿÿHÈ9RMINORZ
+CODE_SMELL
+Š
+java:S2293""YReplace the type specification in this constructor call with the diamond operator ("<>").(²©ŸÇüÿÿÿÿHÌ9RMINORZ
+CODE_SMELL
