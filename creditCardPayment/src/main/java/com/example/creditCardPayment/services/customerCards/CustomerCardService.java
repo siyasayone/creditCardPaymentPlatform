@@ -101,21 +101,9 @@ public class CustomerCardService {
 		if (customerCardDTO.getCardNumber() == null) {
 			throw new CardException("");
 		}
-		CustomerRegistration user = customerRepository.findByUsernameIs(loggeduser.getUsername());
-		format.setLenient(false);
-		if (customerCardDTO.getExpiryDate() != null && !customerCardDTO.getExpiryDate().isEmpty()
-				&& !customerCardDTO.getExpiryDate().isBlank()) {
-			try {
-				format.parse(customerCardDTO.getExpiryDate());
-			} catch (ParseException e) {
-				System.out.println("Date " + customerCardDTO.getExpiryDate() + " is not valid according to "
-						+ format.toPattern() + " pattern.");
-				throw new DateException("Given date is not valid according to the pattern dd/mm/yyyy");
-			}
-		}
 		Calendar cl = Calendar.getInstance();
 		CustomerCreditCard card = customerCreditCardRepository
-				.findByCardNumberAndCustomerId(customerCardDTO.getCardNumber(), user.getCustomerId());
+				.findByCardNumber(customerCardDTO.getCardNumber());
 		if (card != null) {
 			card.setCardNumber(customerCardDTO.getCardNumber());
 			if (customerCardDTO.getCustomerName() != null) {
