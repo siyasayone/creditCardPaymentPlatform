@@ -35,8 +35,10 @@ public class CustomerCardDTO {
 	@Digits(integer = 10, fraction = 0)
 	private Long moblileNumber;
 	
-	private Long creditLimit;
+	@NotNull
+	private Long totalCreditLimit;
 	
+	@NotNull
 	private Long availableCredit;
 	
 }
