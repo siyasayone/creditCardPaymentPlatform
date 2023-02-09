@@ -32,6 +32,9 @@ public interface CustomerStatementRepository extends JpaRepository<CustomerState
 	@Query(value = "SELECT a FROM CustomerStatement a WHERE customercardNumber=:customercardNumber")
 	List<CustomerStatement> listPayments(Long customercardNumber);
 	
+	@Query(value = "SELECT a FROM CustomerStatement a WHERE customercardNumber=:customercardNumber and a.isPaid='N'  ORDER BY createdDate DESC LIMIT 1")
+	CustomerStatement viewLastGeneratedbillByCardNumber(Long customercardNumber);
+	
 	@Query(value = "SELECT a FROM CustomerStatement a WHERE a.customercardNumber=:customercardNumber  and a.isPaid='N'")
 	CustomerStatement findLastStatementByCustomercardNumber(Long customercardNumber);
 	
