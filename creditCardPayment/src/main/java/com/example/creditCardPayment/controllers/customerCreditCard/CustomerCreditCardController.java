@@ -52,20 +52,19 @@ public class CustomerCreditCardController {
 
 	}
 	
-	@GetMapping("/removeAccount")
-	public ResponseEntity<Object> removeAccount(@AuthenticationPrincipal UserDetailsImpl loggeduser) {
-		return customerCardService.removeAccount(loggeduser);
-
-	}
-	
 	@GetMapping("/showCardDetails")
 	public CardDTO showCardDetails(@AuthenticationPrincipal UserDetailsImpl loggeduser) {
 		return customerCardService.showCardDetails(loggeduser);
 	}
 	
-	@GetMapping("getStatementPaymentHistory")
-	public List<CustomerStatement> getPaymentHistory(@RequestParam Long cardNumber) {
-		return customerCardService.getPaymentHistory(cardNumber);
+	@GetMapping("getStatementHistory")
+	public List<CustomerStatement> getStatementHistory(@RequestParam Long cardNumber) {
+		return customerCardService.getStatementHistory(cardNumber);
+	}
+	
+	@GetMapping("viewGeneratedBills")
+	public CustomerStatement viewGeneratedBills(@RequestParam Long cardNumber) {
+		return customerCardService.viewGeneratedBills(cardNumber);
 	}
 
 }
