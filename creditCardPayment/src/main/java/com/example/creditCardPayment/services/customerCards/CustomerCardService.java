@@ -81,8 +81,8 @@ public class CustomerCardService {
 				card.setMobileNumber(c.getMoblileNumber());
 				card.setExpiryDate(format.parse(c.getExpiryDate()));
 				card.setCustomerId(user.getCustomerId());
-				card.setCreditLimit(100000L);
-				card.setAvailableCredit(100000L);
+				card.setCreditLimit(c.getTotalCreditLimit());
+				card.setAvailableCredit(c.getAvailableCredit());
 				card.setTotalDue(0L);
 				int day = statementDate();
 				card.setStatementDay(Long.valueOf(day));
@@ -168,7 +168,7 @@ public class CustomerCardService {
 			cdto.setCustomerName(c.getCustomerName());
 			cdto.setExpiryDate(format.format(c.getExpiryDate()));
 			cdto.setMoblileNumber(c.getMobileNumber());
-			cdto.setCreditLimit(c.getCreditLimit());
+			cdto.setTotalCreditLimit(c.getCreditLimit());
 			cdto.setAvailableCredit(c.getAvailableCredit());
 			cardDetails.add(cdto);
 		}
@@ -190,7 +190,7 @@ public class CustomerCardService {
 		List<CustomerStatement> cd = customerStatementRepository.listPayments(cardNumber);
 		return cd.stream().collect(Collectors.toList());
 	}
-	
+
 	public CustomerStatement viewGeneratedBills(Long cardNumber) {
 		return customerStatementRepository.viewLastGeneratedbillByCardNumber(cardNumber);
 	}
