@@ -186,28 +186,13 @@ public class CustomerCardService {
 		return dto;
 	}
 
-	public ResponseEntity<Object> removeAccount(UserDetailsImpl loggeduser) {
-		Calendar cl = Calendar.getInstance();
-		CustomerRegistration user = customerRepository.findByUsernameIs(loggeduser.getUsername());
-		if (user != null) {
-			user.setIsActive("N");
-			user.setIsDeleted("Y");
-			user.setModifiedDate(cl.getTime());
-			customerRepository.save(user);
-		}
-		List<CustomerCreditCard> yr = customerCreditCardRepository.findByCustomerId(user.getCustomerId());
-		for (CustomerCreditCard c : yr) {
-			c.setIsActive("N");
-			c.setIsDeleted("Y");
-			c.setModifiedDate(cl.getTime());
-			customerCreditCardRepository.save(c);
-		}
-		return new ResponseEntity<>("Account deleted Successfully", HttpStatus.OK);
-	}
-
-	public List<CustomerStatement> getPaymentHistory(Long cardNumber) {
+	public List<CustomerStatement> getStatementHistory(Long cardNumber) {
 		List<CustomerStatement> cd = customerStatementRepository.listPayments(cardNumber);
 		return cd.stream().collect(Collectors.toList());
+	}
+	
+	public CustomerStatement viewGeneratedBills(Long cardNumber) {
+		return customerStatementRepository.viewLastGeneratedbillByCardNumber(cardNumber);
 	}
 
 }
