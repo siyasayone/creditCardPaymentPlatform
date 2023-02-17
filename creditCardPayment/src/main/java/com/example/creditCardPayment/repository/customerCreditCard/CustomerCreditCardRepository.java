@@ -37,6 +37,16 @@ public interface CustomerCreditCardRepository extends JpaRepository<CustomerCred
 	void updateCreditLimit(Long availableCredit,Long totalDue, Long customerId,Long cardNumber);
 	
 	@Transactional
+	@Modifying
+	@Query(value = "Update CustomerCreditCard a SET a.extraPaidAmount=:extraPaidAmount,a.totalDue=:totalDue WHERE a.customerId=:customerId and a.cardNumber=:cardNumber AND a.isDeleted = 'N'")
+	void updateExtraAmntPaidAndtotalDue(Long extraPaidAmount,Long totalDue, Long customerId,Long cardNumber);
+	
+	@Transactional
+	@Modifying
+	@Query(value = "Update CustomerCreditCard a SET a.extraPaidAmount=:extraPaidAmount WHERE a.cardNumber=:cardNumber AND a.isDeleted = 'N'")
+	void updateExtraAmntPaid(Long extraPaidAmount,Long cardNumber);
+	
+	@Transactional
 	@Query(value = "select h from CustomerCreditCard h where h.isDeleted='N' and h.statementDay=:statementDay")
 	List<CustomerCreditCard> findByStatementDay(Long statementDay);
 	
