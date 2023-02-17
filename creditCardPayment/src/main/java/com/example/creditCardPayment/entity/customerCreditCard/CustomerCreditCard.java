@@ -50,6 +50,9 @@ public class CustomerCreditCard {
 	private Long totalDue;
 	
 	@Column(length = 50)
+	private Long extraPaidAmount;
+	
+	@Column(length = 50)
 	private Long creditLimit;
 
 	@Column(length = 30)
