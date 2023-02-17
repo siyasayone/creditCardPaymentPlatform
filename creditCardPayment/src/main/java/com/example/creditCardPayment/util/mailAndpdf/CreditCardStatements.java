@@ -94,10 +94,9 @@ public class CreditCardStatements {
 			mimeMessage.setRecipient(Message.RecipientType.TO, iaRecipient);
 			mimeMessage.setContent(mimeMultipart);
 
-			Transport.send(mimeMessage);
-
-			System.out.println(
-					"sent from " + sender + ", to " + recipient + "; server = " + smtpHost + ", port = " + smtpPort);
+		if(dto.getTotalDue()!=0) {
+				Transport.send(mimeMessage);
+			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		} finally {
@@ -191,7 +190,7 @@ public class CreditCardStatements {
 		table1.getDefaultCell().setHorizontalAlignment(Element.ALIGN_CENTER);
 		table1.getDefaultCell().setVerticalAlignment(Element.ALIGN_MIDDLE);
 		for (CustomerTransactionDTO d : dto.getCustomerTransactionDTO()) {
-			if (d.getCustomerId().equals(dto.getCustomerId())) {
+			if (d.getCustomerCardNumber().equals(dto.getCustomerCardNo())) {
 				LocalDate ldate1 = LocalDate.from(d.getTransactionDate().toInstant().atZone(ZoneOffset.UTC));
 				String s1 = DateTimeFormatter.ISO_DATE.format(ldate1);
 				table1.addCell(d.getAmount().toString());
