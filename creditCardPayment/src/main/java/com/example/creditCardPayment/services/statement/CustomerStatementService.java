@@ -80,11 +80,32 @@ public class CustomerStatementService {
 			CustomerStatementDTO dto =new CustomerStatementDTO();
 			dto.setMailId(u.getEmail());
 			dto.setAvailableCredit(u.getAvailableCredit());
-			dto.setTotalDue(u.getTotalDue());
+			Long totalDue;
+			Long extraPaidAmnt;
+			if(u.getExtraPaidAmount()!=0) {
+				if(u.getExtraPaidAmount()>u.getTotalDue()) {
+					totalDue=0L;
+					extraPaidAmnt=u.getExtraPaidAmount()-u.getTotalDue();
+				}
+				else {
+					totalDue=u.getTotalDue()-u.getExtraPaidAmount();
+					extraPaidAmnt=u.getTotalDue()-u.getExtraPaidAmount();
+				}
+			}
+			else {
+				totalDue=u.getTotalDue();	
+				extraPaidAmnt=u.getExtraPaidAmount();
+			}
+			customerCreditCardRepository.updateExtraAmntPaidAndtotalDue(extraPaidAmnt,totalDue,u.getCustomerId(),u.getCardNumber());
+//			if(totalDue==0) {
+//				return ResponseEntity.badRequest()
+//						.body(new MessageResponse("No statements for this month"));
+//			}
+			dto.setTotalDue(totalDue);
 			dto.setCreditLimit(u.getCreditLimit());
-			dto.setMinimumAmountDue(u.getTotalDue() * 1 / 4);
+			dto.setMinimumAmountDue(totalDue * 1 / 4);
 			dto.setCustomerId(u.getCustomerId());
-			
+			dto.setCustomerCardNo(u.getCardNumber());
 			entity = new CustomerStatement();
 			entity.setCustomerId(dto.getCustomerId());
 			entity.setMinimumAmountDue(dto.getMinimumAmountDue());
@@ -103,8 +124,9 @@ public class CustomerStatementService {
 			for(CustomerStatementDTO s:statement) {
 				for(CustomerTransaction t:tList) {
 					CustomerTransactionDTO dto1 = new CustomerTransactionDTO();
-					if(s.getCustomerId().equals(t.getCustomerId())) {
+					if(s.getCustomerCardNo().equals(t.getCustomerCardNumber())) {
 						dto1.setCustomerId(t.getCustomerId());
+						dto1.setCustomerCardNumber(t.getCustomerCardNumber());
 						dto1.setAmount(t.getAmount());
 						dto1.setTransactionDate(t.getTransactionDate());
 						transactions.add(dto1);
@@ -168,12 +190,15 @@ public class CustomerStatementService {
 			return ResponseEntity.badRequest().body(
 					new MessageResponse("Minimum due amount as per your last statement is" + c.getMinimumAmountDue()));
 		}
-		
+		Long totalDue,extraAmmnt;
 		if(payBillsDTO.getAmount()>c.getTotalDue()) {
-			return ResponseEntity.badRequest().body(
-					new MessageResponse("Total due amount as per your last statement is" + c.getTotalDue()));
+			extraAmmnt=payBillsDTO.getAmount()-c.getTotalDue();
+			totalDue=0L;
+			customerCreditCardRepository.updateExtraAmntPaid(extraAmmnt, payBillsDTO.getCustomerCardNumber());
 		}
-		Long totalDue = card.getTotalDue() - payBillsDTO.getAmount();
+		else {
+		 totalDue = card.getTotalDue() - payBillsDTO.getAmount();
+		}
 		Long minimumAmountDue=0L;
 		if(totalDue==0) {
 			minimumAmountDue=0L;
