@@ -27,6 +27,7 @@ import com.example.creditCardPayment.exception.InvalidCustomerDetailsException;
 import com.example.creditCardPayment.repository.customer.CustomerRepository;
 import com.example.creditCardPayment.repository.customerCreditCard.CustomerCreditCardRepository;
 import com.example.creditCardPayment.repository.statement.CustomerStatementRepository;
+import com.example.creditCardPayment.response.MessageResponse;
 import com.example.creditCardPayment.security.UserDetailsImpl;
 
 /**
@@ -82,6 +83,7 @@ public class CustomerCardService {
 				card.setExpiryDate(format.parse(c.getExpiryDate()));
 				card.setCustomerId(user.getCustomerId());
 				card.setCreditLimit(c.getTotalCreditLimit());
+				card.setExtraPaidAmount(0L);
 				card.setAvailableCredit(c.getAvailableCredit());
 				card.setTotalDue(0L);
 				int day = statementDate();
@@ -95,8 +97,7 @@ public class CustomerCardService {
 		return yr;
 	}
 
-	public CustomerCreditCard updateCard(CustomerCardDTO customerCardDTO, UserDetailsImpl loggeduser)
-			throws ParseException {
+	public CustomerCreditCard updateCard(CustomerCardDTO customerCardDTO, UserDetailsImpl loggeduser) {
 
 		if (customerCardDTO.getCardNumber() == null) {
 			throw new CardException("");
@@ -181,6 +182,20 @@ public class CustomerCardService {
 
 	public CustomerStatement viewGeneratedBills(Long cardNumber) {
 		return customerStatementRepository.viewLastGeneratedbillByCardNumber(cardNumber);
+	}
+
+	public ResponseEntity<?> refundAmnt(Long cardNumber,Long amount) {
+		CustomerCreditCard card= customerCreditCardRepository.findByCardNumber(cardNumber);
+		Long extraAmnt=0L;
+		if(card.getExtraPaidAmount()<amount) {
+			return ResponseEntity.badRequest()
+					.body(new MessageResponse("maximum amount to refund is"+card.getExtraPaidAmount()));
+		}
+		else {
+			extraAmnt=card.getExtraPaidAmount()-amount;
+			customerCreditCardRepository.updateExtraAmntPaid(extraAmnt,cardNumber);
+		}
+		return ResponseEntity.ok(new MessageResponse("Refund Completed Successfully!"));
 	}
 
 }
