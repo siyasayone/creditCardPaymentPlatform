@@ -66,5 +66,11 @@ public class CustomerCreditCardController {
 	public CustomerStatement viewGeneratedBills(@RequestParam Long cardNumber) {
 		return customerCardService.viewGeneratedBills(cardNumber);
 	}
+	
+	@PostMapping("/refundAmnt")
+	public ResponseEntity<?> refundAmnt(@Valid @RequestParam Long cardNumber,@RequestParam Long amount) {
+		return customerCardService.refundAmnt(cardNumber,amount);
+	}
+
 
 }
